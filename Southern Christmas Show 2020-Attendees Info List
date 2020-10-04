@@ -1,0 +1,347 @@
+Delivered-To: iochen.com@gmail.com
+Received: by 2002:a05:6a10:c7c6:0:0:0:0 with SMTP id h6csp3575784pxy;
+        Mon, 28 Sep 2020 13:54:42 -0700 (PDT)
+X-Google-Smtp-Source: ABdhPJwWRxZORcd+DBcRfyZrSWkD9IjKod7e3n0wIhbTLBd2oIWhLIzKqsGNL1g08DsWJePzJJRC
+X-Received: by 2002:a63:474b:: with SMTP id w11mr677280pgk.376.1601326482493;
+        Mon, 28 Sep 2020 13:54:42 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1601326482; cv=pass;
+        d=google.com; s=arc-20160816;
+        b=ELCWp8cWpA5pf2oLvFyFwfDX80k434VxXjgxZCuVtD+g1PgCCBcAlPP5ZXoSzlKUxB
+         6B2gTtlenaQrtyTjXTSTnjBun3Djyjr/iH/pasL9ahPJdBMpZaNAzyp+/exI9hPaCwh3
+         utoeRpa8lcyOGtPkcvTGZ7ti4oMpYfFXUiLoOfBlZQi9sFo/hWV5PlosUaF6bp9zVRa/
+         1xzkhQAgAwlid0CRq3US3Esqrq4kkWwXurNlF9B/4Z627JLSlp3IdpyVl3tVukh+aKni
+         OrNJpRS3qbr3aR7WIdr2+ver8YYefD1dd4aAcHOQCymsKbCJbdZYBgvialT9iIhHJL5Y
+         HPgA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:content-language:accept-language:message-id:date
+         :thread-index:thread-topic:subject:to:from;
+        bh=oN3xyh51DHA5gv6J4pAvTFmiO740yTRTbWxlgmk6oIQ=;
+        b=nxgwQXbwWoc+QARddUsEu0ZitBpe6kM23TlQCk4Iub4WUZRga/5ujRvhzKMmxM2Mua
+         oIcijFK0nO2KSEcLyPDTIcrsodvwgsd6MKb2cAaWTkXzU6Ue+pLzm2iU0RT6SNXXoXss
+         nhLOEKN2ZQda5x7hCCLjq9S5Kmm2mci4wDOs81GxXueLjCrKxLt80iXgnBIQuH3dEj48
+         2jXnaiogzmP/gaURM8VLjNyf4kKBpyheLo5vnnjMOYfgA3lC0h01jvd+VepzCTfVrj1O
+         SvnlUYNvKWIuy7O85fopNPGTtWnkbhzasM32v0v04maZmFoQoOkMfBAvKO0H2eOHEXDD
+         G17A==
+ARC-Authentication-Results: i=2; mx.google.com;
+       arc=pass (i=1 spf=pass spfdomain=visitordataview.com dkim=pass dkdomain=visitordataview.com dmarc=pass fromdomain=visitordataview.com);
+       spf=pass (google.com: domain of lucy.diaz@visitordataview.com designates 40.107.138.114 as permitted sender) smtp.mailfrom=lucy.diaz@visitordataview.com
+Return-Path: <lucy.diaz@visitordataview.com>
+Received: from IND01-MA1-obe.outbound.protection.outlook.com (mail-eopbgr1380114.outbound.protection.outlook.com. [40.107.138.114])
+        by mx.google.com with ESMTPS id bv2si1521834pjb.9.2020.09.28.13.54.41
+        for <iochen.com@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Mon, 28 Sep 2020 13:54:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of lucy.diaz@visitordataview.com designates 40.107.138.114 as permitted sender) client-ip=40.107.138.114;
+Authentication-Results: mx.google.com;
+       arc=pass (i=1 spf=pass spfdomain=visitordataview.com dkim=pass dkdomain=visitordataview.com dmarc=pass fromdomain=visitordataview.com);
+       spf=pass (google.com: domain of lucy.diaz@visitordataview.com designates 40.107.138.114 as permitted sender) smtp.mailfrom=lucy.diaz@visitordataview.com
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=WxpZJPD/7e94bvb9ZGevVBqCsddVodivK7aaiD5BCKnZjfrErBtTlnDOT/n0Q2XVpKz2wiNDr3hxoq/xl3hTudDuz1fF7f8cFnTikwzNlitVyIz7A2pPSKnGm9NOG6LywTGtm5nebqx4+57Ggcn4Yu0ePzCz1+sLhYVDdCMLdYPpDZSEpuvGBnJ403yIk87LGdXiD8/c8t3paqhpQyEdTw7JHyMSc0yFwaRLA/OTBAL7hMZV4drnvJM+aYrUK6ApzPwTFvxJ2UP/fzxk7IxZC8ytXI+ZAJWlifK+Md0vJGdF/7Wfb7w2XBcv0c5tjnWFJgKmdL30FVUCWfg5zvqjzg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=oN3xyh51DHA5gv6J4pAvTFmiO740yTRTbWxlgmk6oIQ=;
+ b=BgSZl9+pISqWA1gWmjSmN1ZGVAPuq2aAnzo0cTW1jfKv8/la1FScjNyB3l3OvVzfflKgEabPqtjM40KPbqOlzuNl5/Kcwz7JUgifsFgovs7/T55a6hGskoYxNmgjhHmBIu1tfcADunzWZYHa1RquBTHpbBcFtKj2pT3ad4gCEnbvPbnBn9rOvbinKCnoFZammY6if5HckJQDrirPX19KARgfG5aZI3MKT0UDBiMZWBwK9qd1TWs/ajTK8Q0sF8+hUJYBhTRTr8M3j+KySiHaI4w+nbvzz89p29aQuskeBoWZJLL0EqceLEkEOFLfvuofQVmqeLfFts3hYzRx9/7QWQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=visitordataview.com; dmarc=pass action=none
+ header.from=visitordataview.com; dkim=pass header.d=visitordataview.com;
+ arc=none
+Received: from BM1PR0101MB1108.INDPRD01.PROD.OUTLOOK.COM (2603:1096:b00:1d::8)
+ by BMXPR01MB3813.INDPRD01.PROD.OUTLOOK.COM (2603:1096:b00:56::18) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3412.22; Mon, 28 Sep
+ 2020 20:54:40 +0000
+Received: from BM1PR0101MB1108.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d4b7:2cbb:a349:364a]) by BM1PR0101MB1108.INDPRD01.PROD.OUTLOOK.COM
+ ([fe80::d4b7:2cbb:a349:364a%5]) with mapi id 15.20.3412.029; Mon, 28 Sep 2020
+ 20:54:40 +0000
+From: Lucy Diaz <lucy.diaz@visitordataview.com>
+To: "iochen.com@gmail.com" <iochen.com@gmail.com>
+Subject: Southern Christmas Show 2020-Attendees Info List
+Thread-Topic: Southern Christmas Show 2020-Attendees Info List
+Thread-Index: AdaV2ZRIjWxMlfvPQBirVKeYhiTaUg==
+Date: Mon, 28 Sep 2020 20:54:40 +0000
+Message-ID:
+ <BM1PR0101MB11081E93AFC983E555BE7EC7FF350@BM1PR0101MB1108.INDPRD01.PROD.OUTLOOK.COM>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: gmail.com; dkim=none (message not signed)
+ header.d=none;gmail.com; dmarc=none action=none
+ header.from=visitordataview.com;
+x-originating-ip: [42.109.128.253]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 28176be1-e07b-4727-a890-08d863f0b7eb
+x-ms-traffictypediagnostic: BMXPR01MB3813:
+x-microsoft-antispam-prvs:
+ <BMXPR01MB3813F77791187E18529DD821FF350@BMXPR01MB3813.INDPRD01.PROD.OUTLOOK.COM>
+x-ms-oob-tlc-oobclassifiers: OLM:7691;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ l0tfLJK9vFlPonQq4b3LxzaAdXR5i2a8CDQSNSdCWVzhxOxnuHIb9UfnMBFD+oZLp/kLFPUSf047h6FcWSYogkvTzq0wj23cA8THQimb64Kijg/J7/M6xGLybi46nxhA7Rp3jiJWTgjrWmaKF2IcXEHblUO+DED7ZHqcFFivHiUbtX/w7Be6FJe/eUvFqxO5BAber8ZqXA0u/Vwvfc9nhk4bJmn4K4ZyReK0uMjtQXq2KdCRnzynaQE5C5gFaxEtv4bHzOg5OZkFTC16ccyvifuZkwOeooCy8AvRZgG1RQp0xrxuY0fBLLh4M0g9jUSAGrmyRFcEgIsiCvtihLSbnpRM5q86wqnOJ59rnEVh+JIb36vWmimQnqML8t2PcWptySvS+f5BluY9SXLAfhb+qSaUwku2twp9dYfv1DqWLKIX1DBf4azCbUkAY9g13xqG
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BM1PR0101MB1108.INDPRD01.PROD.OUTLOOK.COM;PTR:;CAT:NONE;SFS:(34096005)(136003)(346002)(376002)(39850400004)(396003)(366004)(316002)(478600001)(2906002)(7696005)(6916009)(44832011)(66556008)(64756008)(66446008)(66476007)(86362001)(55016002)(6506007)(26005)(9686003)(186003)(76116006)(66946007)(5660300002)(9326002)(71200400001)(52536014)(33656002)(8676002)(4744005)(8936002)(130980200001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata:
+ RJGtFM65xHF7HrAvCHSH95xcKbXrw6j9RVIgW7kdmoxhLVNucsxSCN4ptpoFP8sf+RJ6hGGH0ZAhNXakCG1HfsHItSmLAVdIkQn6it6dgvYGtw/rTqPpiHPhiau/XtmbIw/SbKUl9P4WjWjYJbjI4kNkja8aAt2PaNCNn+epOFd5NuBv1+dnTFs5eGG4Np8KxzfrWJeHBMopRLSB3lbDM7LTImP2FqS/wDLgsO10cts2YxMTG40taV6IgJOnlGSgV8JDIGWodeaDiTWhH/OcRVtPRLA2J/Ka0knWx3w8UUDp6VqlxRFgyBQJ81JcK9AzeaYUuSRFi+hmpao6d4OlcPdgEg/GQRwAWx7vMEbTw6yGPkCOSGBaEibosfB0EzqhuvxEeIefQpFmgE+omzW5dQV8nQQ2Vy8wMgb18InFbmYQZSMXhhRiIfwn+zbipiXndQBFkRxB/POKq0j2s2tii3V9EOGLJlHqx1/jUgja4Lprjw+H8LT9X0r8Wati/3pOM5bOYySuf2pvwk9CeV8/O/SwOIjsShQMCp0BmrUduEI4tK6Spfj0PPLQUwUO0GfIqwa11+4eOzX3e9KGb95mKWmH1Td1xeRVuuwxKnn0MER33nV+uwlyLfN+NnaQ8FIZANSNMFjKUIwKRH7omqyWDw==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_BM1PR0101MB11081E93AFC983E555BE7EC7FF350BM1PR0101MB1108_"
+MIME-Version: 1.0
+X-OriginatorOrg: visitordataview.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BM1PR0101MB1108.INDPRD01.PROD.OUTLOOK.COM
+X-MS-Exchange-CrossTenant-Network-Message-Id: 28176be1-e07b-4727-a890-08d863f0b7eb
+X-MS-Exchange-CrossTenant-originalarrivaltime: 28 Sep 2020 20:54:40.0701
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 63cc8684-3ea2-4749-b9c5-aa6ed2de6622
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: CCSVLhiihwtmBAXoM1ynKeFmL9ylUbYSoFYNRmRxEo0dGeO5cAHrfmYpIlRmEuzpfKRRkr9hSeSmfNypoUkBtUXyDEsegPU5vFgpqP5wsWc=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BMXPR01MB3813
+
+--_000_BM1PR0101MB11081E93AFC983E555BE7EC7FF350BM1PR0101MB1108_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Hello
+Hope you and your family are safe !!
+
+Myself Lucy Diaz, Business Analyst of Inside data view.
+We would like to follow-up with you for the below mentioned exhibition atte=
+ndees' s database.
+
+
+Expo details
+
+Southern Christmas Show 2020
+Nov 12, 2020 (11 days), Charlotte, United States
+Visitors=3D4836
+
+Data base contains:
+
+  *   Contact Name
+  *   Email Address
+  *   Phone No
+  *   Title, Company Name
+  *   URL/Website
+  *   City
+  *   Country
+
+
+
+We await your interest to obtain the above-mentioned database. Please feel =
+free to write us and we can come up with an attractive price for you.
+
+Kindly let us know your thoughts, so we can send you more information on sa=
+me.
+
+Best Regards,
+Lucy Diaz
+Business Analyst
+
+
+
+
+
+--_000_BM1PR0101MB11081E93AFC983E555BE7EC7FF350BM1PR0101MB1108_
+Content-Type: text/html; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+>
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:1085684573;
+	mso-list-type:hybrid;
+	mso-list-template-ids:469268140 1074331649 1074331651 1074331653 107433164=
+9 1074331651 1074331653 1074331649 1074331651 1074331653;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Hello<o:p></o:p></p>
+<p class=3D"MsoNormal">Hope you and your family are safe !!<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt;vertical-align:top">Myse=
+lf Lucy Diaz,
+<span style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;co=
+lor:#263238">Business Analyst
+</span>of Inside data view.<span style=3D"font-size:10.0pt;font-family:&quo=
+t;Arial&quot;,sans-serif;color:#263238"><o:p></o:p></span></p>
+<p class=3D"MsoNormal">We would like to follow-up with you for the below me=
+ntioned exhibition attendees&#8217; s database.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><b><u><span style=3D"font-family:&quot;Helvetica&quo=
+t;,sans-serif;color:#222222;background:white">Expo details</span></u></b><s=
+pan lang=3D"EN-IE"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"font-family:&quot;Helvetica&quot;,=
+sans-serif;color:#222222;background:white">&nbsp;</span></b><span lang=3D"E=
+N-IE"><o:p></o:p></span></p>
+<p class=3D"MsoNormal"><b><span style=3D"background:yellow;mso-highlight:ye=
+llow">Southern Christmas Show 2020<o:p></o:p></span></b></p>
+<p class=3D"MsoNormal"><b><span style=3D"background:yellow;mso-highlight:ye=
+llow">Nov 12, 2020 (11 days), Charlotte, United States<o:p></o:p></span></b=
+></p>
+<p class=3D"MsoNormal"><b><span style=3D"background:yellow;mso-highlight:ye=
+llow">Visitors=3D4836</span><o:p></o:p></b></p>
+<p class=3D"MsoNormal"><b>&nbsp;</b>&nbsp;<span lang=3D"EN-IE"><o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><b><u><span style=3D"font-family:&quot;Helvetica&quo=
+t;,sans-serif;color:#222222;background:white">Data base contains:</span></u=
+></b><span lang=3D"EN-IE"><o:p></o:p></span></p>
+<ul style=3D"margin-top:0in" type=3D"disc">
+<li class=3D"MsoNormal" style=3D"text-align:justify;mso-list:l0 level1 lfo1=
+"><b><span lang=3D"EN-IN">Contact Name</span></b><span lang=3D"EN-IE"><o:p>=
+</o:p></span></li><li class=3D"MsoNormal" style=3D"text-align:justify;mso-l=
+ist:l0 level1 lfo1"><b><span lang=3D"EN-IN">Email Address</span></b><span l=
+ang=3D"EN-IE"><o:p></o:p></span></li><li class=3D"MsoNormal" style=3D"text-=
+align:justify;mso-list:l0 level1 lfo1"><b><span lang=3D"EN-IN">Phone No</sp=
+an></b><span lang=3D"EN-IE"><o:p></o:p></span></li><li class=3D"MsoNormal" =
+style=3D"text-align:justify;mso-list:l0 level1 lfo1"><b><span lang=3D"EN-IN=
+">Title, Company Name</span></b><span lang=3D"EN-IE"><o:p></o:p></span></li=
+><li class=3D"MsoNormal" style=3D"text-align:justify;mso-list:l0 level1 lfo=
+1"><b><span lang=3D"EN-IN">URL/Website</span></b><span lang=3D"EN-IE"><o:p>=
+</o:p></span></li><li class=3D"MsoNormal" style=3D"text-align:justify;mso-l=
+ist:l0 level1 lfo1"><b><span lang=3D"EN-IN">City</span></b><span lang=3D"EN=
+-IE"><o:p></o:p></span></li><li class=3D"MsoNormal" style=3D"text-align:jus=
+tify;mso-list:l0 level1 lfo1"><b><span lang=3D"EN-IN">Country</span></b><sp=
+an lang=3D"EN-IE"><o:p></o:p></span></li></ul>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal">&nbsp;<o:p></o:p></p>
+<p class=3D"MsoNormal">We await your interest to obtain the above-mentioned=
+ database. Please feel free to write us and we can come up with an attracti=
+ve price for you.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Kindly let us know your thoughts, so we can send you=
+ more information on same.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal" style=3D"background:white"><span style=3D"color:blac=
+k">Best Regards,</span><span lang=3D"EN-IE"><o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt;vertical-align:top"><spa=
+n style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:=
+#263238">Lucy Diaz<o:p></o:p></span></p>
+<p class=3D"MsoNormal" style=3D"line-height:12.0pt;vertical-align:top"><spa=
+n style=3D"font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;color:=
+#263238">Business Analyst<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"EN-IE"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+</div>
+</body>
+</html>
+
+--_000_BM1PR0101MB11081E93AFC983E555BE7EC7FF350BM1PR0101MB1108_--
