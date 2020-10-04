@@ -1,0 +1,105 @@
+Delivered-To: iochen.com@gmail.com
+Received: by 2002:a05:6a10:c7c6:0:0:0:0 with SMTP id h6csp4506147pxy;
+        Tue, 22 Sep 2020 11:01:52 -0700 (PDT)
+X-Received: by 2002:a05:6830:4d3:: with SMTP id s19mr3413783otd.57.1600797712028;
+        Tue, 22 Sep 2020 11:01:52 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1600797712; cv=none;
+        d=google.com; s=arc-20160816;
+        b=lQ/QyIFUQtCEaYV0vcWZZUjWPUYGuMNFRFOn7hAbmbU8/tJjXOjH8M4YNhhRZ5ondK
+         swevh6LCOW7HS6kMpgNafqE//8dK/WBqAVemcQ1MVCXV4DiZDMzUi6JfXt/G+93twx0P
+         YUBOY2suLFnRqXW1fXdXVcIWZXZN1qP6kx4MgDQBKS0cShvLPP/vd+lG69LQH5gnh8iQ
+         qCGx3R8ANyChGj+PT36P6cFwydhwQuRfSt2XIn+Wjs1eh2iIyk2qtEDl+Qu3HW+VMHXv
+         3p7DxjxGPiJOqDZeMle6xhqQ/1rwhfg8dx/gCCS0S7A0M0hMDXomspAWzXur4ywBYvlm
+         /H+g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:sender:mime-version:dkim-signature;
+        bh=KppfXZZpJPEi/CjZSEtvqmbI5qt1QsjN8iLsZFEVchY=;
+        b=0LDosuTjgPTbu/vc7iFSbzueSJAVEh5BbCFnrzb3Wci/abehZbAQBkpX1w4Sve5tfC
+         cV9MXYaVc5rHz8cLkgnR9cUoYOjawZcTcPZhb0M3Xq0VTkUqbGGmUDBpm5LUu9LhbscB
+         gsAKu3H30tPMjBtQCSWFeJwx7+JBIt84h5zJ4D3/sQXQcYQdF7KBXIhYvdmVMP1gl+bv
+         e6lMC36OxZHjkoKH9pETp6MeNYWpAFUebvOCmmxZrynmK1KjTuttcSo+SBlg0gMX1gsP
+         28JTI734z8mgCLzBYeXLk3pspkcIBuYZa8l07vq6EdF3nJwppBi60E0zvrT6UOlFPVlZ
+         S/yw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bLu5ME0S;
+       spf=pass (google.com: domain of morisjohnson1960@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=morisjohnson1960@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <morisjohnson1960@gmail.com>
+Received: from mail-sor-f65.google.com (mail-sor-f65.google.com. [209.85.220.65])
+        by mx.google.com with SMTPS id j22sor3805933oii.9.2020.09.22.11.01.51
+        for <iochen.com@gmail.com>
+        (Google Transport Security);
+        Tue, 22 Sep 2020 11:01:52 -0700 (PDT)
+Received-SPF: pass (google.com: domain of morisjohnson1960@gmail.com designates 209.85.220.65 as permitted sender) client-ip=209.85.220.65;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20161025 header.b=bLu5ME0S;
+       spf=pass (google.com: domain of morisjohnson1960@gmail.com designates 209.85.220.65 as permitted sender) smtp.mailfrom=morisjohnson1960@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:sender:from:date:message-id:subject:to;
+        bh=KppfXZZpJPEi/CjZSEtvqmbI5qt1QsjN8iLsZFEVchY=;
+        b=bLu5ME0SsUIVypoKsmPDwzmX3nxgPQNA/NJlo+hTzpXHOfGdYaWDuvYM+/m1yjNkFf
+         1dclWUrnBAJmiYKQutUix1pYwSI5C/8yyuyBFbbh9EWwubcp59wMef1OILcz3VCIsCuF
+         /vskkNouJSO81sz58FwIo1jp97Dz8c0xiozVF9oSAKOg6rVzLVok4wasMaCnCwyEYDyB
+         cBK6UF72yLhYQabUsyecKfZJNnVJETowsDw9NU3cT2010KXKExm7F2BoWQPHsx6WEDva
+         t75XG73EMTkqydxUqwtbpj6q+0vCCFg+NMalWuLoZZ2aWythj2B8GoejZA7JXgrhBSNI
+         JAAA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:sender:from:date:message-id:subject
+         :to;
+        bh=KppfXZZpJPEi/CjZSEtvqmbI5qt1QsjN8iLsZFEVchY=;
+        b=YoyASO7FmL1pe5R+5W7XyqWJxVaHQXhZb6k3/A9Mj+MfHPgl/5dXlEmZhrg6+d2UD2
+         nxS6yziaOGbnYfF/03xH88yUfRIDxv/CpP/ATJpNgWIVBmal1Q18ixDDSJlA1i/qv7Tr
+         gpo4mfjEq10BMKYQQFXQGP0v9eWj6K6SQKEtOTZrdmXYD1dRooGEdtJC2QEG8QiEQeRd
+         JVI9reurJQcU8T5ereidurq08k6hsI4yXhKdLqqKaxSwFSWfPSrJsP+qA27IYf8cXRN1
+         ojmbJErYqKTAdYxKSKva0bCJUEYb2yxuNf1Sy4MXqNp0V9xa0hyJttxXcG2RHWdmXXi8
+         rUuw==
+X-Gm-Message-State: AOAM530X8YcTeHmKe+GfSPKNObfTYlJOKIsJ0uiem+u1prTZkBTQZzo5
+	FXtBRt5G2g0MraMjM0X9NHqjo18cNe4bFa3g+u4=
+X-Google-Smtp-Source: ABdhPJzACRl9tU6cHwxzJ4jVQ/NZbKG4gsd81p4vHtPNWtC3rS5vWo5qzYVJaJF4D+Z9X42912gmNySMZ6dBOTT4zFE=
+X-Received: by 2002:aca:d0c:: with SMTP id 12mr3233516oin.178.1600797711441;
+ Tue, 22 Sep 2020 11:01:51 -0700 (PDT)
+MIME-Version: 1.0
+Sender: morisjohnson1960@gmail.com
+Received: by 2002:a05:6830:210c:0:0:0:0 with HTTP; Tue, 22 Sep 2020 11:01:51
+ -0700 (PDT)
+From: Mrs Carlsen Monika <carlsen.monika@gmail.com>
+Date: Tue, 22 Sep 2020 19:01:51 +0100
+X-Google-Sender-Auth: AxnQe9xGmAjLug3qGjbGFgKzvqo
+Message-ID: <CAChN3US=ftp4kCbwJDJkanP2OwVnT4SeUQ7y6oLXAH_p7r9bfg@mail.gmail.com>
+Subject: Greetings My Dear, Please I Need Your Help.
+To: undisclosed-recipients:;
+Content-Type: text/plain; charset="UTF-8"
+Bcc: iochen.com@gmail.com
+
+Greetings My Dear,
+
+    I sent this mail praying it will found you in a good condition of
+health, since I myself are in a very critical health condition in
+which I  sleep every night without knowing if I may be alive to see
+the next day. I am Mrs. Monika John  Carlsen from Denmark wife of late
+Mr John Carlsen, a widow suffering from long time illness. I have some
+funds I inherited from my late husband, the sum of (eleven million
+dollars) my Doctor told me recently that I have serious sickness which
+is cancer problem. What disturbs me most is my stroke sickness. Having
+known my condition, I decided to donate this fund to a good person
+that will utilize it the way i am going to instruct herein. I need a
+very honest and God fearing person who can claim this money and use it
+for Charity works, for orphanages, widows and also  build schools for
+less privileges that will be named after my late husband if possible
+and to promote the word of God and the effort that the house of God is
+maintained.
+
+I do not want a situation where this money will be used in an ungodly
+manner. That's why I'm taking this decision. I'm not afraid of death
+so I know where I'm going. I accept this decision because I do not
+have any child who will inherit this money after I die. Please I want
+your sincerely and urgent answer to know if you will be able to
+execute this project, and I will give you more information on how the
+fund will be transferred to your bank account. I am waiting for your
+reply.
+
+May God Bless you,
+Mrs. Monika John  Carlsen
