@@ -1,0 +1,50 @@
+Authentication-Results: w3.tutanota.de (dis=spam; info=dmarc default policy);
+	dmarc=fail (dis=spam p=quarantine; aspf=r; adkim=r; pSrc=config) header.from=c-maj.fr
+Received: from w4.tutanota.de ([192.168.1.165])
+        by w3.tutanota.de
+        with SMTP (SubEthaSMTP 3.1.7) id KJKENJBN
+        for i@iochen.com;
+        Tue, 05 Jan 2021 20:48:14 +0100 (CET)
+Received-SPF: None (mailfrom) identity=mailfrom; client-ip=176.118.53.129; helo=ip-176-118-53-129.radionetwork.com.ua; envelope-from=noreply@c-maj.fr; receiver=<UNKNOWN> 
+Received: from ip-176-118-53-129.radionetwork.com.ua (unknown [176.118.53.129])
+	by w4.tutanota.de (Postfix) with SMTP id E754C10602ED
+	for <i@iochen.com>; Tue,  5 Jan 2021 19:48:12 +0000 (UTC)
+Received: from ip-176-118-53-129.radionetwork.com.ua ([127.0.0.1]) by ip-176-118-53-129.radionetwork.com.ua ([127.0.0.1]) with SMTPSVC;
+	 Tue, 05 Jan 2021 20:48:11 +0100
+Message-ID: <6a9faa34c51a5efa4198745f07a3f937@c-maj.fr>
+Reply-To: <noreply@c-maj.fr>
+From: "Team World Business Register" <noreply@c-maj.fr>
+To: <i@iochen.com>
+Subject: =?utf-8?B?V29ybGQgQnVzaW5lc3MgUmVnaXN0ZXIgMjAyMS8yMDIyIFBl?=
+	=?utf-8?B?bmRpbmcgZG9tYWluIHJlZ2lzdHJhdGlvbiBbUkVGOkRMQS02?=
+	=?utf-8?B?NTAzOV0=?=
+Date: Tue, 05 Jan 2021 20:48:11 +0100
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="312cf35800efcf2ec9ab45f5000693c1"
+  
+
+
+Ladies and Gentlemen,
+
+In order to have your business(es) inserted in
+the registry of World Companies for the
+2021-2022 edition; please print and complete
+the attached document (wbl2021eu.jpg) and send it
+to this address:
+
+World-Business-List
+Postbox 34
+3700 AA Zeist
+Nederland
+
+Fax: +31 303 100 126
+or email it to the email address mentioned on the form.
+
+Updating is free of charge!
+
+This form can also be used for your other
+domain(s) and/or business(es).
+A PDF version of the form is also available.
+
+DEADLINE: January 15 2021!
