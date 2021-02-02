@@ -1,0 +1,62 @@
+Authentication-Results: w3.tutanota.de (dis=neutral; info=dmarc default policy);
+	dmarc=pass (dis=neutral p=quarantine; aspf=r; adkim=r; pSrc=config) header.from=gmail.com;
+	dkim=pass header.d=gmail.com header.s=20161025 header.b=qVOdnMMt
+Received: from w1.tutanota.de ([192.168.1.162])
+        by w3.tutanota.de
+        with SMTP (SubEthaSMTP 3.1.7) id KKENYLRT
+        for i@iochen.com;
+        Wed, 27 Jan 2021 01:01:41 +0100 (CET)
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=209.85.208.175; helo=mail-lj1-f175.google.com; envelope-from=vps000kf@gmail.com; receiver=<UNKNOWN> 
+Received: from mail-lj1-f175.google.com (mail-lj1-f175.google.com [209.85.208.175])
+	by w1.tutanota.de (Postfix) with ESMTPS id 24296FBF668
+	for <i@iochen.com>; Wed, 27 Jan 2021 00:01:40 +0000 (UTC)
+Received: by mail-lj1-f175.google.com with SMTP id f19so84331ljn.5
+        for <i@iochen.com>; Tue, 26 Jan 2021 16:01:40 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=mWo0GJYboIvA9wDfRuhvZA+7oQpZ4KOy3PNEj9NVuz0=;
+        b=qVOdnMMtp/BF4xH9g3x6oeNVhG4gcJz4MT4IIn48yYCGzYZyyyEfcUZwQvSLTWdhGS
+         l0+CZs39ay+EU/GA6sUhM1eSdQSt0SGHh9P6XAPALJQC1sNzmeYU23xThHGR8fWj+FAx
+         nw+CyMA4WfkLfGZrKnmzZPLfPLVsR33HoY6wLibJyqJqYM5Y048RLN7LzLEkw7d5ENKU
+         +2AQMgFwAkSL1NZsae991HdN4Qszlbu7wOlvb9BPiS4tCOfEn/43T4XLpt78h2r8Xcwg
+         oH7DBeG90C6rEATo1GeUL0OvpTMW12D7uslzPTC1lH8lX86qa2YEkKJFY57eUdoQg7g6
+         P4LA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=mWo0GJYboIvA9wDfRuhvZA+7oQpZ4KOy3PNEj9NVuz0=;
+        b=diugjIfbf6IoeHGQLU+JNtkYB5Hs6CkVPUPX6R0k4zGi0caW6tyMl3Iesu7wAmUvrg
+         iVGRPBFV9m8Bc7BpoEz2I4JFyKEdmO3c7EpP2FrCUZkSkuXdrPTKIFt4a5Q2CUa6SLSY
+         slyRMhCP49PP+i0TKyISofAIIuxThM871eGiPs8T9OEZ5HT20C8IjkXE1YY82VV6b7Yt
+         cjzOTulvQ78ZTjnEbCULwnwsVBli0IufSv7L9P/Sf5gwSMXfWZ2BmeskxyNS1uPcpB6X
+         QknJhvou/nTZny2yG5KELjWt6C2nuLOFtHcboXdYFmtsF+4W3bYjCwme+lehHVDXHzUL
+         1Q/w==
+X-Gm-Message-State: AOAM530suRzdBiW3Ff1M/iW+7wg8geE6TRngz/EQWYy8rjUsOZwtk1cQ
+	7XDp9jyvICPmuRwWyQ7g6Ve3gaX3rcQl59SYDes=
+X-Google-Smtp-Source: ABdhPJxeKm8LeFpXw+GWQDuzmCQLTs9C904CLcowoFZ9x8jVk4t+caV+4WUAgf4J2g9EcoDYfHeZveQRAdAoG68wtBc=
+X-Received: by 2002:a2e:a54d:: with SMTP id e13mr4080963ljn.45.1611705699503;
+ Tue, 26 Jan 2021 16:01:39 -0800 (PST)
+MIME-Version: 1.0
+From: "威伯斯雲" <vps000kf@gmail.com>
+Date: Wed, 27 Jan 2021 08:00:00 +0800
+Message-ID: <CALE_WT51jAop4+mGZbu9aEa4spsE+pKB3iSOv6nMeFZ-1NeAvw@mail.gmail.com>
+Subject: =?UTF-8?B?5ZWG5YuZ5ZCI5L2c?=
+To: 000 vps <vps000kf@gmail.com>
+Content-Type: multipart/mixed; boundary="000000000000b3b1a205b9d67973"
+
+您好，
+
+我們是香港威伯斯雲，香港電信旗下業務，網址是https://www.vps000.org/。自2015年成立以來，一直致力於網絡建設和傳輸業務，為企業和個人用戶提供全球與香港的網絡直連通道。我司關注您的網站發佈相關內容，希望您能考慮與我司合作，為您的客戶推薦更快更穩定更安全的VPN。
+
+威伯斯雲與國內外VPN商家對比是有絕對優勢的。我們在老式VPN技術的基礎上做出突破性改革，採用Cisco思科公司的獨家加密協議，擺脫了從國內連到跳板再從跳板到目的地的延遲。我們全套服務均使用Cisco企業級系統構建，安全性穩定性極高。
+
+Cisco官方支持IOS, Android, MacOS, Android, Linux等所有機型設備直接在中國區應用商店下載，為用戶提供最方便快捷的服務。用戶使用支付寶或Paypal充值後即可解鎖Youtube，Netflix，HBO max等各大國外流媒體，並享受快速穩定的觀影體驗。另外，威伯斯雲全面接管客服和技術支持，我們有每天早9點到晚9點的線上客服、whatsapp客服以及Email客服，無需代理處理任何售後問題。
+
+我們想請您做我們的推廣代理。我們會給您做專屬的推廣鏈接和二維碼供您放在您的頁面。用戶通過您的鏈接註冊後即成為您的永久用戶，後面的充值和續費您都拿相同比例佣金，最高達50%月營銷額。具體的產品介紹和提成政策請參考附件兩個文件。謝謝您的時間，期待回復！
+
+ 
+
+謝謝，
+
+威伯斯雲
