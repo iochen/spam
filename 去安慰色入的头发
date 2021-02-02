@@ -1,0 +1,90 @@
+Authentication-Results: w3.tutanota.de (dis=neutral; info=dmarc default policy);
+	dmarc=pass (dis=neutral p=quarantine; aspf=r; adkim=r; pSrc=config) header.from=tom.com;
+	dkim=pass header.d=tom.com header.s=201807 header.b=zNcz011l
+Received: from w1.tutanota.de ([192.168.1.162])
+        by w3.tutanota.de
+        with SMTP (SubEthaSMTP 3.1.7) id KK4VO920
+        for i@iochen.com;
+        Wed, 20 Jan 2021 04:39:59 +0100 (CET)
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=106.3.154.248; helo=smtp.tom.com; envelope-from=dudixia626224@tom.com; receiver=<UNKNOWN> 
+Received: from smtp.tom.com (smtprz15.163.net [106.3.154.248])
+	by w1.tutanota.de (Postfix) with ESMTPS id 8E0D2FA0573
+	for <i@iochen.com>; Wed, 20 Jan 2021 03:39:57 +0000 (UTC)
+Received: from my-app01.tom.com (my-app01.tom.com [127.0.0.1])
+	by freemail01.tom.com (Postfix) with ESMTP id 7CD8A1F1E029
+	for <i@iochen.com>; Wed, 20 Jan 2021 11:39:58 +0800 (CST)
+Received: from my-app01.tom.com (HELO smtp.tom.com) ([127.0.0.1])
+          by my-app01 (TOM SMTP Server) with SMTP ID 61155530
+          for <i@iochen.com>;
+          Wed, 20 Jan 2021 11:39:58 +0800 (CST)
+Received: from antispam1.tom.com (unknown [172.25.16.55])
+	by freemail01.tom.com (Postfix) with ESMTP id 6C70F1F1E008
+	for <i@iochen.com>; Wed, 20 Jan 2021 11:39:54 +0800 (CST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=tom.com; s=201807;
+	t=1611113998; bh=D7QHz3UYWjdvHroi9Jjjb1zxyrxjsFOOp2vAfiag2Og=;
+	h=Date:From:Subject:From;
+	b=zNcz011laR2t5rqNTT5Kx9z+yHj/O2xV5N3fADS/uKAlPtlaE1MZOEEheY9CIjePN
+	 mBYbZYOL2HyFKNbNBV5J/5x4jBeFPdpXDUBtXAn0dS2WAas8ah4A2qEVSSOxqgK9PJ
+	 UA3AAzRkU970nmABwTydMRUjGK1xp/9tERzkjxEA=
+Received: from antispam1.tom.com (antispam1.tom.com [127.0.0.1])
+	by antispam1.tom.com (Postfix) with ESMTP id 4109910017B7
+	for <i@iochen.com>; Wed, 20 Jan 2021 11:38:54 +0800 (CST)
+X-Virus-Scanned: Debian amavisd-new at antispam1.tom.com
+Received: from antispam1.tom.com ([127.0.0.1])
+	by antispam1.tom.com (antispam1.tom.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id K7V6b2EMcB0h for <i@iochen.com>;
+	Wed, 20 Jan 2021 11:38:53 +0800 (CST)
+Received: from PC-201903261607 (unknown [113.88.118.109])
+	by antispam1.tom.com (Postfix) with ESMTPA id 18F901001349;
+	Wed, 20 Jan 2021 11:38:48 +0800 (CST)
+Date: Wed, 20 Jan 2021 11:39:33 +0800
+From: dudixia626224 <dudixia626224@tom.com>
+Message-ID: <8FD7496C-2974-4465-8419-862672E12FE1@tom.com>
+Subject: =?utf-8?B?5Y675a6J5oWw6Imy5YWl55qE5aS05Y+R?=
+X-Mailer: MailMasterPC/4.15.4.1004 (Windows 7)
+X-CUSTOM-MAIL-MASTER-SENT-ID: E9071789-D22F-45D6-B7D7-A3F9E138DD81
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: base64
+
+
+
+Please kindly DO NOT reply to this email address!!!!
+
+Hi~Dear manager
+
+Hope you had a nice holidays , I wish you a full harvest in the new year and a prosperous career(:
+
+ 
+
+I'm very lucky to be able to share these molds and parts with you here，the customer is also extremely satisfied with us. he is going to place a new order to us.
+
+ 
+
+Hope can help you learn more about our company (: plastic injection molds and parts, over molding, blow molds and parts, machining CNC parts, and lathed metal parts.), if you are interested, welcome to contact me anytime, I am also happy to share with you.
+
+ 
+
+If you can give us a chance, we will definitely win your trust.We are confident in our quality and ability!
+
+ 
+
+Wishing you have a busy, productive fruitful January sincerely!
+
+Best Regards
+
+Nancy
+
+HuiLing Precision Moulds Co.Ltd.     
+
+Skype: falion7379
+
+E-mail:hkhling@hkhling.com；nancyqu2018@gmail.com
+
+Mobile phone/Webchat:+86-18926441725
+
+
+	
+dudixia626224
+dudixia626224@tom.com
+签名由 网易邮箱大师 定制
