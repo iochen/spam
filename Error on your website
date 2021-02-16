@@ -1,0 +1,45 @@
+Authentication-Results: w3.tutanota.de (dis=neutral; info=spf);
+	dmarc=pass (dis=neutral p=quarantine; aspf=r; adkim=r; pSrc=config) header.from=sendspost.com
+Received: from w4.tutanota.de ([192.168.1.165])
+        by w3.tutanota.de
+        with SMTP (SubEthaSMTP 3.1.7) id KL6U21V7
+        for iochen@tuta.io;
+        Mon, 15 Feb 2021 18:09:59 +0100 (CET)
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=74.208.4.197; helo=mout.perfora.net; envelope-from=scottrmurphy@sendspost.com; receiver=<UNKNOWN> 
+Received: from mout.perfora.net (mout.perfora.net [74.208.4.197])
+	by w4.tutanota.de (Postfix) with ESMTPS id EBB221060303
+	for <iochen@tuta.io>; Mon, 15 Feb 2021 17:09:58 +0000 (UTC)
+Received: from contacter ([167.114.156.15]) by mrelay.perfora.net (mreueus003
+ [74.208.5.2]) with ESMTPSA (Nemesis) id 0LsSUg-1lrNph47rM-0120bx for
+ <iochen@tuta.io>; Mon, 15 Feb 2021 18:09:54 +0100
+From: Scott <ScottRMurphy@sendspost.com>
+To: iochen@tuta.io
+Message-ID: <1140704953.1613408993418.mail.client@mx.sendspost.com>
+Subject: Error on your website
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Date: Mon, 15 Feb 2021 18:09:54 +0100
+X-Provags-ID: V03:K1:bsK74LkV7cLEc4AomCk9eQXLf5szQV4RhP/H+Z8gOnVDVo7adEy
+ 4t3DN1B06/omurgL6p3KeHNWE7vsbyha1BNv8DTEh3plDqRyuCnjTxmfCgyZ/myf6rLJ4oG
+ r7WTOy9WhCNl+m+NKB5jTC/1wSfJ87mjJErTGn6FA+Js1IcUMUngNXv8EZufDBSy8fFGpkb
+ b2KipSOlAu3+iKMZuAAVQ==
+X-Spam-Flag: NO
+X-UI-Out-Filterresults: notjunk:1;V03:K0:UXR+VcArs5A=:19kf8Bf4SSnGcy2qBtzFIe
+ 2jYznuDPcPXjrdQ5zXcb0adadpHTyE6FYW2NtOtC1ZTCe4ED/fXWDSHT249Uw2PT5JFMP7YeL
+ qoIWp3bXNDGDBeW8grVafYdarwotwG9eRyLkJsJqS5L/KgKG6Sdoq7Bp/uiAdRr9BlNfZh+eN
+ V4jxI7o58+A9lDIqeFNGuZP2Od9Xly0WIQHkUjs5cVnFjJbRq2nX4a425jdL4/OwXomF0BJ4T
+ 2MYq5auWX+6tRM+EULaiw5l3XZsWEogmn9NdZZobvBrkxJTn7YZ6uaIgkXJbOlye0Q/yuP16N
+ IICJlLPIhE+Sk3zKr1zh1Ydk1TwTs3Y4gKtc9cR+mhJW0tvSMFL267iysLvXH1OAoU8Tm925d
+ OoRJ2zKg3IrDPw1EHuO2Fb6ECdV78AV5Bkg27VHWGicVxOPY3foHzdBn28Ndad4UYzmmCfZuI
+ Eo7Ck4d66vhHtO6r7JJE7AATiWPKWbBu/PaE+WxNae6O+Cofjsuuza1JUDPGd4TC5YYwuO6qx
+ yLkzgZZIVdsq+Weq1dO0g7KkjmZf2EIG+X82xtI2KQsB+aAP5H4ubO0qwt0V1sBwhGdrhcQUW
+ BoBSNYk8dgkxEWbTX3ortdk6DyHUKtbOTU6VQr3MsdiKtQpc61bdhyO27KWRubWe3kTyo6QBD
+ +ruoyuCxK98wevVUIX2dqWhQE2N4w1MquTvgagBq68C5wB5urejfCOkV8QMKuX7LGHIJXQ8uB
+ hJ6G5LKowkOx8+EI
+ 
+It looks like this link is broken on your site: https://iochen.com/post/enable-adobe-flash-chrome-after-end-of-...be-flash-chrome-after-end-of-life/)
+
+I thought you would like to know :). Silly mistakes can ruin your site's credibility. I've used a tool called linkSniff.com in the past to keep mistakes off of my website.
+
+-iochen
